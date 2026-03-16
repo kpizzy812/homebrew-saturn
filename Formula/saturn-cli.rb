@@ -11,7 +11,7 @@ class SaturnCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kpizzy812/saturn-cli/releases/download/v1.6.0/saturn-cli_1.6.0_darwin_amd64.tar.gz"
-      sha256 "1eb6e0a013e3e2dbc70d79269ef5af9b84db6afecb1e4880654a36073e0d1315"
+      sha256 "19e11a4a8eac43cadec948d275ce3bd6f7882f8607bbb51f6b1c31787a960d15"
 
       define_method(:install) do
         bin.install "saturn"
@@ -19,7 +19,7 @@ class SaturnCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kpizzy812/saturn-cli/releases/download/v1.6.0/saturn-cli_1.6.0_darwin_arm64.tar.gz"
-      sha256 "972fc0ab31a4fbb3324cfdb546e93f19e44a73cea7cbcd8e1f234b0536a4a4ab"
+      sha256 "833b3d14411e9d8c329f03e13f261fda0bd0e0d258c669cbd34a19b8854bfb07"
 
       define_method(:install) do
         bin.install "saturn"
@@ -30,14 +30,14 @@ class SaturnCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/kpizzy812/saturn-cli/releases/download/v1.6.0/saturn-cli_1.6.0_linux_amd64.tar.gz"
-      sha256 "f35acb5bb4bceefc24d4806a80b34bf24c27ebd7cf0653edeb0154a299e85d13"
+      sha256 "49f47f2257e0b2f3ef20c6bed75b67d1f04dde16899bde29c1c39ecb06c9222a"
       define_method(:install) do
         bin.install "saturn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kpizzy812/saturn-cli/releases/download/v1.6.0/saturn-cli_1.6.0_linux_arm64.tar.gz"
-      sha256 "ea4564df82dace020537da6b95b2ea9d6af9c3f23163cb9c817cb438a78ef0f8"
+      sha256 "d2d0136c50f0d7a196e498ac439de7c5e50b8f18eab96ab18c0023b1052515c9"
       define_method(:install) do
         bin.install "saturn"
       end
