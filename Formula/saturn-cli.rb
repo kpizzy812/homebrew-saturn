@@ -5,21 +5,21 @@
 class SaturnCli < Formula
   desc "Command-line interface for Saturn Platform"
   homepage "https://github.com/kpizzy812/saturn-cli"
-  version "1.6.0"
+  version "1.7.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kpizzy812/saturn-cli/releases/download/v1.6.0/saturn-cli_1.6.0_darwin_amd64.tar.gz"
-      sha256 "19e11a4a8eac43cadec948d275ce3bd6f7882f8607bbb51f6b1c31787a960d15"
+      url "https://github.com/kpizzy812/saturn-cli/releases/download/v1.7.0/saturn-cli_1.7.0_darwin_amd64.tar.gz"
+      sha256 "1a4bde43b9095d345e851cf14d400e66fcb073444550d64afef8f80e79302248"
 
       define_method(:install) do
         bin.install "saturn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kpizzy812/saturn-cli/releases/download/v1.6.0/saturn-cli_1.6.0_darwin_arm64.tar.gz"
-      sha256 "833b3d14411e9d8c329f03e13f261fda0bd0e0d258c669cbd34a19b8854bfb07"
+      url "https://github.com/kpizzy812/saturn-cli/releases/download/v1.7.0/saturn-cli_1.7.0_darwin_arm64.tar.gz"
+      sha256 "de0582360f3a5ec3ff85a2a05d19c674c4e07f7462bda37faaf4713cbd44142e"
 
       define_method(:install) do
         bin.install "saturn"
@@ -29,15 +29,15 @@ class SaturnCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kpizzy812/saturn-cli/releases/download/v1.6.0/saturn-cli_1.6.0_linux_amd64.tar.gz"
-      sha256 "49f47f2257e0b2f3ef20c6bed75b67d1f04dde16899bde29c1c39ecb06c9222a"
+      url "https://github.com/kpizzy812/saturn-cli/releases/download/v1.7.0/saturn-cli_1.7.0_linux_amd64.tar.gz"
+      sha256 "29337a2b32f016da056d99281cc5a78bbc5124f186b8c29875d0525fd73e9549"
       define_method(:install) do
         bin.install "saturn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kpizzy812/saturn-cli/releases/download/v1.6.0/saturn-cli_1.6.0_linux_arm64.tar.gz"
-      sha256 "d2d0136c50f0d7a196e498ac439de7c5e50b8f18eab96ab18c0023b1052515c9"
+      url "https://github.com/kpizzy812/saturn-cli/releases/download/v1.7.0/saturn-cli_1.7.0_linux_arm64.tar.gz"
+      sha256 "aa1abd77464bc745b8961017daf576b065c9921570017769e7bede0f71307d09"
       define_method(:install) do
         bin.install "saturn"
       end
